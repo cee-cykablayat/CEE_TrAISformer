@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+
+# Large data artifacts (do not commit)
+*.parquet
+*.h5
+*.pt
+*.pkl
+
+# Notebook checkpoints
+.ipynb_checkpoints/

@@ -1,0 +1,34 @@
+{
+  "input_parquet": "CEE-Replication/Notebook/region_1_interpolated.parquet",
+  "n_rows": 28274619,
+  "n_windows_total": 468578,
+  "n_mmsi": 15639,
+  "splits": {
+    "train_windows": 377476,
+    "valid_windows": 45118,
+    "test_windows": 45984,
+    "train_mmsi": 12511,
+    "valid_mmsi": 1563,
+    "test_mmsi": 1565
+  },
+  "normalization": {
+    "lat_min": 17.444502113282542,
+    "lat_max": 31.10030578215527,
+    "lon_min": -98.73875593375215,
+    "lon_max": -80.20286521880064,
+    "max_sog": 30.0,
+    "cog_divisor": 360.0,
+    "clip_max": 0.9999
+  },
+  "windowing": {
+    "max_seqlen_plus_one": 121,
+    "min_seqlen": 37,
+    "stride": 60
+  },
+  "suggested_model_sizes": {
+    "lat_size": 250,
+    "lon_size": 270,
+    "sog_size": 30,
+    "cog_size": 72
+  }
+}
