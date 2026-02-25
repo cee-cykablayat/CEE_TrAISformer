@@ -9,3 +9,7 @@ __pycache__/
 
 # Notebook checkpoints
 .ipynb_checkpoints/
+
+# MLflow runtime artifacts
+mlruns/
+mlflow.db
